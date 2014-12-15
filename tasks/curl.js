@@ -49,7 +49,7 @@ module.exports = function (grunt) {
       var content = '';
       if (src.json === true) {
         // Stringify the result
-        content = JSON.stringify(files, null, 2);
+        content = JSON.stringify(files);
       } else {
         // Concatenate the srcFiles, process the blob through our helper,
         var separator = data.separator || '\n';
